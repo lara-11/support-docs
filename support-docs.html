@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trossen Robotics Documentation</title>
+    <link rel="stylesheet" href="_static/tr_style.css" type="text/css" />
+</head>
+
+<body>
+    <!--SUPPORT PAGE-->
+    <div class="container">
+
+        <!--Navigation-->
+        <nav id="navbar" data-spy="affix">
+            <div class="nav-flex">
+                <a href="https://www.trossenrobotics.com">
+                    <img src="https://www.trossenrobotics.com/Shared/Logo/new_logo-footer-box1.png" id="logo-img-toggle"
+                        class="nav-logo-img" data-image="0">
+                </a>
+
+                <ul id="mynavbar" class="navbar">
+                    <a href="https://www.trossenrobotics.com" class="test-hide">
+                        <img src="https://www.trossenrobotics.com/Shared/Logo/new_logo-footer-box1.png"
+                            id="logo-img-toggle" class="nav-logo-img2" data-image="0">
+                    </a>
+                    
+                    <ul class="dropdown">
+                        <button class="dropbtn">
+                            <a href="#">STORE</a>
+                        </button>
+
+                        <li class="dropdown-content">
+                            <dl id="hover-stay">
+                                <button class="dropbtn">
+                                    <a href="https://www.trossenrobotics.com/robotic-arms.aspx">Robot Arms</a>
+                                </button>
+                                <dd id="dropdown1">
+                                    <a href="https://www.trossenrobotics.com/robotic-arms/industrial-cobot.aspx">- Industrial &
+                                        Cobot Arms</a>
+                                    <a href="https://www.trossenrobotics.com/robotic-arms/cobot-end-effectors.aspx">- Industrial
+                                        End-Effectors</a>
+                                    <a href="https://www.trossenrobotics.com/robotic-arms/ros-research-arms.aspx">- ROS Research
+                                        Arms</a>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <button class="dropbtn">
+                                    <a href="https://www.trossenrobotics.com/ros-rovers-turtlebot.aspx">UGV's / AGV's</a>
+                                </button>
+                                <dd id="dropdown2">
+                                    <a href="#">- Indoor</a>
+                                    <a href="#">- Outdoor</a>
+                                </dd>
+                            </dl>
+                            <a href="https://www.trossenrobotics.com/Quadruped-Robot-Hexapod-Robot-Kits.aspx">Quadrupeds</a>
+                            <a href="https://www.trossenrobotics.com/c/robot-turrets.aspx">Pan & Tilt</a>
+                            <a href="https://www.trossenrobotics.com/robot-servos">Servos</a>
+                            <a href="https://www.trossenrobotics.com/robot-parts.aspx">Accessories</a>
+                        </li>
+                    </ul>
+
+                    <ul class="dropdown">
+                        <button class="dropbtn">
+                            <a href="#">PLATFORMS</a>
+                        </button>
+                        <li class="dropdown-content">
+                            <a href="https://www.trossenrobotics.com/robotic-arms/industrial-cobot.aspx">AgileX UGV's</a>
+                            <a href="https://www.trossenrobotics.com/robotic-arms/cobot-end-effectors.aspx">AgileX LIMO</a>
+                            <a href="https://www.trossenrobotics.com/robotic-arms/ros-research-arms.aspx">DOBOT Cobots</a>
+                            <a href="https://www.trossenrobotics.com/robotic-arms/ros-research-arms.aspx">Interbotix Arms</a>
+                            <a href="https://www.trossenrobotics.com/robotic-arms/ros-research-arms.aspx">Interbotix LoCoBots</a>
+                            <a href="https://www.trossenrobotics.com/robotic-arms/ros-research-arms.aspx">Unitree Quadrupeds</a>
+                        </li>
+                    </ul>
+
+                    <a href="https://www.trossenrobotics.com/ros-rovers-turtlebot.aspx" class="active">DOCS</a>
+                    <a href="https://www.trossenrobotics.com/videos-overview.aspx">VIDEOS</a>
+                    <a href="https://www.trossenrobotics.com/contact.aspx">CONTACT</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                </ul>
+                <a class="filler"></a>
+            </div>
+        </nav>
+
+        <!--Interbotix-->
+        <div class="interbotix">
+            <div class="interbotix-box1">
+                <figure class="interbotix">
+                    <a href="#interbotix-platforms">
+                        <img src="_static/_images/interbotix.png" class="interbotix-logo-img" id="interbotix-platforms">
+                    </a>
+                </figure>
+            </div>
+
+            <div class="interbotix-box2">
+                <figure>
+                    <a href="https://docs.trossenrobotics.com/interbotix_xsarms_docs/" class="docs-link"
+                        target="_blank">
+                        <img src="_static/_images/interbotix_xsarms.png" class="interbotix-link-img"
+                            alt="Link to Interbotix X-Series Arms documentation">
+                    </a>
+
+                    <p>Interbotix X-Series Arms</p>
+                </figure>
+
+                <figure>
+                    <a href="https://docs.trossenrobotics.com/interbotix_xslocobots_docs" class="docs-link"
+                        target="_blank">
+                        <img src="_static/_images/interbotix_xslocobots.png" class="interbotix-link-img"
+                            alt="Link to Interbotix X-Series LoCoBots documentation">
+                    </a>
+
+                    <p>Interbotix X-Series LoCoBots</p>
+                </figure>
+            </div>
+        </div>
+
+        <hr>
+
+        <!--AgileX-->
+        <div class="agilex">
+            <div class="agilex-box1">
+                <figure class="agilex">
+                    <a href="#agilex-platforms">
+                        <img src="_static/_images/agilex.png" class="agilex-logo-img" id="agilex-platforms">
+                    </a>
+                </figure>
+            </div>
+
+            <div class="agilex-box2">
+                <figure>
+                    <a href="https://docs.trossenrobotics.com/agilex_bunker_docs" class="docs-link" target="_blank">
+                        <img src="https://trossenrobotics.americommerce.com/Shared/Support Page/agilex-bunker.png"
+                            class="agilex-link-img" alt="Link to AgileX BUNKER documentation">
+                    </a>
+
+                    <p>AgileX Robotics BUNKER</p>
+                </figure>
+
+                <figure>
+                    <a href="https://docs.trossenrobotics.com/agilex_bunker_pro_docs" class="docs-link" target="_blank">
+                        <img src="https://trossenrobotics.americommerce.com/Shared/Support Page/agilex-bunker-pro-shadow2.png"
+                            class="agilex-link-img" alt="Link to AgileX BUNKER PRO documentation">
+                    </a>
+
+                    <p>AgileX Robotics BUNKER PRO</p>
+                </figure>
+
+                <figure>
+                    <a href="https://docs.trossenrobotics.com/agilex_bunker_mini_docs" class="docs-link"
+                        target="_blank">
+                        <img src="https://trossenrobotics.americommerce.com/Shared/Support Page/agilex-bynker-mini.png"
+                            class="agilex-link-img" alt="Link to AgileX BUNKER MINI documentation">
+                    </a>
+
+                    <p>AgileX Robotics BUNKER MINI</p>
+                </figure>
+            </div>
+
+            <div class="agilex-box3">
+                <figure id="tablet-edit3">
+                    <a href="https://docs.trossenrobotics.com/agilex_scout_20_docs" class="docs-link" target="_blank">
+                        <img src="https://trossenrobotics.americommerce.com/Shared/Support Page/agilex-scout-2.png"
+                            class="agilex-link-img" alt="AgileX SCOUT 2.0">
+                    </a>
+
+                    <p>AgileX Robotics SCOUT 2.0</p>
+                </figure>
+
+                <figure>
+                    <a href="https://docs.trossenrobotics.com/agilex_scout_mini_docs" class="docs-link" target="_blank">
+                        <img src="https://trossenrobotics.americommerce.com/Shared/Support Page/agilex-scout-mini.png"
+                            class="agilex-link-img" alt="Link to AgileX SCOUT MINI documentation">
+                    </a>
+
+                    <p>AgileX Robotics SCOUT MINI</p>
+                </figure>
+
+                <figure>
+                    <a href="https://docs.trossenrobotics.com/agilex_tracer_docs" class="docs-link" target="_blank">
+                        <img src="https://trossenrobotics.americommerce.com/Shared/Support Page/agilex-tracer.png"
+                            class="agilex-link-img" alt="Link to AgileX TRACER documentation">
+                    </a>
+
+                    <p>AgileX Robotics TRACER</p>
+                </figure>
+            </div>
+
+            <div class="agilex-box4">
+                <figure>
+                    <a href="https://docs.trossenrobotics.com/agilex_hunter_20_docs" class="docs-link" target="_blank">
+                        <img src="https://trossenrobotics.americommerce.com/Shared/Support Page/agilex-hunter-2.png"
+                            class="agilex-link-img" alt="AgileX HUNTER 2.0">
+                    </a>
+
+                    <p>AgileX Robotics HUNTER 2.0</p>
+                </figure>
+
+                <figure>
+                    <a href="https://docs.trossenrobotics.com/agilex_hunter_se_docs" class="docs-link" target="_blank">
+                        <img src="https://trossenrobotics.americommerce.com/Shared/Support Page/agilex-hunter-se.png"
+                            class="agilex-link-img" alt="Link to AgileX HUNTER SE documentation">
+                    </a>
+
+                    <p>AgileX Robotics HUNTER SE</p>
+                </figure>
+
+                <figure id="tablet-edits7">
+                    <a href="https://docs.trossenrobotics.com/agilex_limo_docs" class="docs-link" target="_blank">
+                        <img src="https://trossenrobotics.americommerce.com/Shared/Support Page/agilex-limo.png"
+                            class="agilex-link-img" alt="Link to AgileX LIMO documentation">
+                    </a>
+
+                    <p>AgileX Robotics LIMO</p>
+                </figure>
+            </div>
+
+            <!--Tablet - Mobile-->
+            <div class="tablet-box2">
+                <figure>
+                    <a href="https://docs.trossenrobotics.com/agilex_bunker_docs" class="docs-link" target="_blank">
+                        <img src="https://trossenrobotics.americommerce.com/Shared/Support Page/agilex-bunker.png"
+                            class="agilex-link-img" alt="Link to AgileX BUNKER documentation">
+                    </a>
+
+                    <p>AgileX Robotics BUNKER</p>
+                </figure>
+
+                <figure>
+                    <a href="https://docs.trossenrobotics.com/agilex_bunker_pro_docs" class="docs-link" target="_blank">
+                        <img src="https://trossenrobotics.americommerce.com/Shared/Support Page/agilex-bunker-pro-shadow2.png"
+                            class="agilex-link-img" alt="Link to AgileX BUNKER PRO documentation">
+                    </a>
+
+                    <p>AgileX Robotics BUNKER PRO</p>
+                </figure>
+            </div>
+
+            <div class="tablet-box3">
+                <figure>
+                    <a href="https://docs.trossenrobotics.com/agilex_bunker_mini_docs" class="docs-link"
+                        target="_blank">
+                        <img src="https://trossenrobotics.americommerce.com/Shared/Support Page/agilex-bynker-mini.png"
+                            class="agilex-link-img" alt="Link to AgileX BUNKER MINI documentation">
+                    </a>
+
+                    <p>AgileX Robotics BUNKER MINI</p>
+                </figure>
+
+                <figure id="tablet-edit3">
+                    <a href="https://docs.trossenrobotics.com/agilex_scout_20_docs" class="docs-link" target="_blank">
+                        <img src="https://trossenrobotics.americommerce.com/Shared/Support Page/agilex-scout-2.png"
+                            class="agilex-link-img" alt="AgileX SCOUT 2.0">
+                    </a>
+
+                    <p>AgileX Robotics SCOUT 2.0</p>
+                </figure>
+            </div>
+
+            <div class="tablet-box4">
+                <figure>
+                    <a href="https://docs.trossenrobotics.com/agilex_scout_mini_docs" class="docs-link" target="_blank">
+                        <img src="https://trossenrobotics.americommerce.com/Shared/Support Page/agilex-scout-mini.png"
+                            class="agilex-link-img" alt="Link to AgileX SCOUT MINI documentation">
+                    </a>
+
+                    <p>AgileX Robotics SCOUT MINI</p>
+                </figure>
+
+                <figure>
+                    <a href="https://docs.trossenrobotics.com/agilex_tracer_docs" class="docs-link" target="_blank">
+                        <img src="https://trossenrobotics.americommerce.com/Shared/Support Page/agilex-tracer.png"
+                            class="agilex-link-img" alt="Link to AgileX TRACER documentation">
+                    </a>
+
+                    <p>AgileX Robotics TRACER</p>
+                </figure>
+            </div>
+
+            <div class="tablet-box5">
+                <figure>
+                    <a href="https://docs.trossenrobotics.com/agilex_hunter_20_docs" class="docs-link" target="_blank">
+                        <img src="https://trossenrobotics.americommerce.com/Shared/Support Page/agilex-hunter-2.png"
+                            class="agilex-link-img" alt="AgileX HUNTER 2.0">
+                    </a>
+
+                    <p>AgileX Robotics HUNTER 2.0</p>
+                </figure>
+
+                <figure>
+                    <a href="https://docs.trossenrobotics.com/agilex_hunter_se_docs" class="docs-link" target="_blank">
+                        <img src="https://trossenrobotics.americommerce.com/Shared/Support Page/agilex-hunter-se.png"
+                            class="agilex-link-img" alt="Link to AgileX HUNTER SE documentation">
+                    </a>
+
+                    <p>AgileX Robotics HUNTER SE</p>
+                </figure>
+            </div>
+
+            <div class="tablet-box6">
+                <figure id="tablet-edits7">
+                    <a href="https://docs.trossenrobotics.com/agilex_limo_docs" class="docs-link" target="_blank">
+                        <img src="https://trossenrobotics.americommerce.com/Shared/Support Page/agilex-limo.png"
+                            class="agilex-link-img" alt="Link to AgileX LIMO documentation">
+                    </a>
+
+                    <p>AgileX Robotics LIMO</p>
+                </figure>
+            </div>
+        </div>
+
+        <hr>
+
+        <!--Unitree Robotics-->
+        <div class="unitree">
+            <div class="unitree-box1">
+                <figure class="unitree">
+                    <a href="#unitree-platforms">
+                        <img src="_static/_images/unitree.png" class="unitree-logo-img" id="unitree-platforms">
+                    </a>
+                </figure>
+            </div>
+
+            <div class="unitree-box2">
+                <figure>
+                    <a href="https://docs.trossenrobotics.com/unitree_go1_docs" class="docs-link" target="_blank">
+                        <img src="_static/_images/unitree_go1.png" class="unitree-link-img" alt="Unitree Go1">
+                    </a>
+
+                    <p>Unitree Robotics Go1</p>
+                </figure>
+            </div>
+        </div>
+
+        <hr>
+
+        <!--DOBOT-->
+        <div class="dobot">
+            <div class="dobot-box1">
+                <figure class="dobot">
+                    <a href="#dobot-platforms">
+                        <img src="_static/_images/dobot.png" class="dobot-logo-img" id="dobot-platforms">
+                    </a>
+                </figure>
+            </div>
+
+            <div class="dobot-box2">
+                <figure>
+                    <a href="https://docs.trossenrobotics.com/dobot_cr_cobots_docs" class="docs-link" target="_blank">
+                        <img src="_static/_images/dobot_cr_cobots.png" class="dobot-link-img"
+                            alt="Link to Dobot CR-Series Cobots documentation">
+                    </a>
+
+                    <p>Dobot CR-Series Cobots</p>
+                </figure>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <!--Box1-->
+        <div class="footer-flex-container">
+            <div class="footer-flex-tablet-container1">
+                <div class="footer-box1">
+                    <figure class="footer-logo-container">
+                        <a href="https://www.trossenrobotics.com">
+                            <img src="https://www.trossenrobotics.com/Shared/Logo/new_logo-footer-box1.png"
+                                class="footer-logo-img" data-image="0" style="width: 100%">
+                        </a>
+                    </figure>
+
+                    <div class="footer-section1-line"></div>
+
+                    <div class="footer-social-flex">
+                        <div style="display: flex;">
+                            <figure class="footer-social-icon1">
+                                <a href="https://www.linkedin.com/company/trossen-robotics/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img src="https://www.trossenrobotics.com/Shared/Social%20Media%20Icons/linkedin-white.png"
+                                        class="footer-social-img1" data-image="0">
+                                </a>
+                            </figure>
+
+                            <figure class="footer-social2-icon1">
+                                <img src="https://www.trossenrobotics.com/Shared/Social%20Media%20Icons/linkedin-blue.png"
+                                    class="footer-social-img1-2" data-image="0">
+                            </figure>
+                        </div>
+
+                        <div style="display: flex;">
+                            <figure class="footer-social-icon2">
+                                <a href="https://instagram.com/trossenrobotics?utm_medium=copy_link" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img src="https://www.trossenrobotics.com/Shared/Social%20Media%20Icons/instagram-white.png"
+                                        class="footer-social-img2" data-image="0">
+                                </a>
+                            </figure>
+
+                            <figure class="footer-social2-icon2">
+                                <img src="https://www.trossenrobotics.com/Shared/Social%20Media%20Icons/instagram-blue.png"
+                                    class="footer-social-img2-2" data-image="0">
+                            </figure>
+                        </div>
+
+                        <div style="display: flex;">
+                            <figure class="footer-social-icon3">
+                                <a href="https://www.facebook.com/Trossen-Robotics-100167362497523/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img src="https://www.trossenrobotics.com/Shared/Social%20Media%20Icons/facebook-white.png"
+                                        class="footer-social-img3" data-image="0">
+                                </a>
+                            </figure>
+
+                            <figure class="footer-social2-icon3">
+                                <img src="https://www.trossenrobotics.com/Shared/Social%20Media%20Icons/facebook-blue.png"
+                                    class="footer-social-img3-2" data-image="0">
+                            </figure>
+                        </div>
+
+                        <div style="display: flex;">
+                            <figure class="footer-social-icon4">
+                                <a href="https://www.youtube.com/c/InterbotixTrossenRobotics" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img src="https://www.trossenrobotics.com/Shared/Social%20Media%20Icons/youtube-white.png"
+                                        class="footer-social-img4" data-image="0">
+                                </a>
+                            </figure>
+
+                            <figure class="footer-social2-icon4">
+                                <img src="https://www.trossenrobotics.com/Shared/Social%20Media%20Icons/youtube-blue.png"
+                                    class="footer-social-img4-2" data-image="0">
+                            </figure>
+                        </div>
+
+                        <div style="display: flex;">
+                            <figure class="footer-social-icon5">
+                                <a href="https://github.com/interbotix" target="_blank" rel="noopener noreferrer">
+                                    <img src="https://www.trossenrobotics.com/Shared/Social%20Media%20Icons/github-white.png"
+                                        class="footer-social-img5" data-image="0">
+                                </a>
+                            </figure>
+
+                            <figure class="footer-social2-icon5">
+                                <img src="https://www.trossenrobotics.com/Shared/Social%20Media%20Icons/github-blue.png"
+                                    class="footer-social-img5-2" data-image="0">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <ul id="footer-menu1">
+                        <li>
+                            <p>2854 Hitchcock Avenue</p>
+                        </li>
+
+                        <li>
+                            <p>Downers Grove, IL 60515</p>
+                        </li>
+
+                        <li style="margin-top: 2px; margin-bottom: 12px;"><a href="tel:866-478-3731"
+                                class="footer-tablet-link">866.478.3731</a></li>
+
+                        <li style="margin-bottom: 5px;"><a href="mailto:trsupport@trossenrobotics.com"
+                                class="footer-tablet-link">trsupport@trossenrobotics.com</a></li>
+                    </ul>
+                </div>
+
+                <!--Box2-->
+                <div class="footer-box2">
+                    <p class="footer-box2-title">Robotics</p>
+
+                    <div class="footer-section2-line"></div>
+
+                    <ul id="footer-menu2">
+                        <li><a href="https://www.trossenrobotics.com/AgileX-Overview" class="footer-tablet-link"
+                                target="_blank" rel="noopener noreferrer">AgileX UGVs</a></li>
+
+                        <li><a href="https://www.trossenrobotics.com/limo-overview.aspx" class="footer-tablet-link"
+                                target="_blank" rel="noopener noreferrer">AgileX LIMO</a></li>
+
+                        <li><a href="https://www.trossenrobotics.com/Dobot-Overview" class="footer-tablet-link"
+                                target="_blank" rel="noopener noreferrer">DOBOT Industrial</a></li>
+
+                        <li><a href="https://www.trossenrobotics.com/xseries-arms-overview" class="footer-tablet-link"
+                                target="_blank" rel="noopener noreferrer">X-Series Arms</a></li>
+
+                        <li><a href="https://www.trossenrobotics.com/unitree-overview" class="footer-tablet-link"
+                                target="_blank" rel="noopener noreferrer">Unitree Robotics</a></li>
+
+                        <li><a href="https://www.trossenrobotics.com/locobot-overview.aspx" class="footer-tablet-link"
+                                target="_blank" rel="noopener noreferrer">LoCoBot</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--Box3-->
+            <div class="footer-flex-tablet-container2">
+                <div class="footer-box3">
+                    <p class="footer-box3-title">Support</p>
+
+                    <div class="footer-section3-line"></div>
+
+                    <ul id="footer-menu3">
+                        <li><a href="https://www.trossenrobotics.com/interbotix-distributors" class="footer-tablet-link"
+                                target="_blank" rel="noopener noreferrer">Distributors</a></li>
+
+                        <li><a href="https://www.trossenrobotics.com/shipping" class="footer-tablet-link"
+                                target="_blank" rel="noopener noreferrer">Shipping</a></li>
+
+                        <li><a href="https://www.trossenrobotics.com/contact.aspx" class="footer-tablet-link"
+                                target="_blank" rel="noopener noreferrer">Contact</a></li>
+
+                        <li><a href="https://www.trossenrobotics.com/customerservice" class="footer-tablet-link"
+                                target="_blank" rel="noopener noreferrer">Customer Service</a></li>
+                    </ul>
+                </div>
+
+                <!--Box4-->
+                <div class="footer-box4">
+                    <p class="footer-box4-title">Documentation</p>
+
+                    <div class="footer-section4-line"></div>
+
+                    <ul id="footer-menu4">
+                        <li><a href="https://docs.trossenrobotics.com/dobot_cr_cobots_docs/" class="footer-tablet-link"
+                                target="_blank" rel="noopener noreferrer">DOBOT CR</a></li>
+
+                        <li><a href="https://docs.trossenrobotics.com/interbotix_xslocobots_docs/"
+                                class="footer-tablet-link" target="_blank" rel="noopener noreferrer">Locobot</a></li>
+
+                        <li><a href="https://docs.trossenrobotics.com/interbotix_xsarms_docs/"
+                                class="footer-tablet-link" target="_blank" rel="noopener noreferrer">XSeries Arms</a>
+                        </li>
+
+                        <!--<li><a href="https://www.trossenrobotics.com/customerservice" class="footer-tablet-link" target="_blank" rel="noopener noreferrer">Customer Service</a></li>-->
+
+                        <li><a href="file:///C:/Users/matt/Desktop/Github-Backups/trossenrobotics.github.io/docs/index.html#agilex-platforms"
+                                class="footer-tablet-link" target="_blank" rel="noopener noreferrer">AgileX UGVs</a>
+                        </li>
+
+                        <!--<li><a href="https://learn.trossenrobotics.com/" class="footer-tablet-link" target="_blank" rel="noopener noreferrer">Legacy Kits</a></li>-->
+
+                        <li><a href="https://docs.trossenrobotics.com/unitree_go1_docs/" class="footer-tablet-link"
+                                target="_blank" rel="noopener noreferrer">Unitree
+                                Robotics</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+<!--Navigation Mobile-->
+<script>
+    // Gives "mynavbar" the new class of "responsive"
+    function myFunction() {
+        var x = document.getElementById("mynavbar");
+        if (x.className === "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar";
+        }
+    }
+
+    //Highlight active page
+    $(function(){
+        $('a').each(function(){
+            if ($(this).prop('href') == window.location.href) {
+                $(this).addClass('active'); $(this).parents('li').addClass('active');
+            }
+        });
+    })
+</script>
